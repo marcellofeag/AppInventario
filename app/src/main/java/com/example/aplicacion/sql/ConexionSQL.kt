@@ -55,9 +55,9 @@ class ConexionSQL {
     }
 
     fun buscarArticulo(codigo: String): Array<String> {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var res: Array<String> = emptyArray()
         try {
@@ -88,9 +88,9 @@ class ConexionSQL {
     }
 
     fun recepcionarArticulo(codigo: String): Array<String> {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var res: Array<String> = emptyArray()
         try {
@@ -119,9 +119,9 @@ class ConexionSQL {
     }
 
     fun anadirRecepcion(codigo: String, paquetes: Int, usuario: String): String {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var preparedStatement: PreparedStatement? = null
         var res = ""
@@ -175,9 +175,9 @@ class ConexionSQL {
     }
 
     fun anadirRegularizacion(codigo: String, cantidadNueva: Int, precio: Double, usuario: String): String {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var preparedStatement: PreparedStatement? = null
         var res = ""
@@ -235,9 +235,9 @@ class ConexionSQL {
     }
 
     fun obtenerActividades(): MutableList<Array<String>> {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var matriz: MutableList<Array<String>> = mutableListOf()
 
@@ -271,9 +271,9 @@ class ConexionSQL {
     }
 
     fun buscarUsuario(usuario: String): Array<String> {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var res: Array<String> = emptyArray()
         try {
@@ -301,9 +301,9 @@ class ConexionSQL {
         return res
     }
     fun guardarUsuario(usuario: String, contra:String, nivel:String): String {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var res: String
         var preparedStatement: PreparedStatement?
@@ -342,9 +342,9 @@ class ConexionSQL {
     }
 
     fun borrarUsuario(usuario: String): String {
-        val url = "jdbc:mysql://bmewlwt5tffmlhyzycob-mysql.services.clever-cloud.com:3306/bmewlwt5tffmlhyzycob?useSSL=false"
-        val username = "uazau9wznpjdpun7"
-        val password = "2dgFom0gocZl9qj1p1sI"
+        val url = "jdbc:mysql://BASE-mysql.services.clever-cloud.com:3306/BASE?useSSL=false"
+        val username = "USUARIO"
+        val password = "CONTRASENA"
         var connection: Connection? = null
         var res: String
         try {
